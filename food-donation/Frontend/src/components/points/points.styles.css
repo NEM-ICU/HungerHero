@@ -1,0 +1,39 @@
+.points {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 1440px;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.bulet {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.point h1 {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.point p {
+    margin-top: 24px;
+    font-size: 22px;
+    line-height: 2.3rem;
+    font-weight: 400;
+}
+
+.bulet h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 28px;
+    color: #2d2727;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .points {
+        grid-template-columns: 1fr;
+    }
+}

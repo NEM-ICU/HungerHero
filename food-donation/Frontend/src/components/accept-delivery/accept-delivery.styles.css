@@ -1,0 +1,52 @@
+.hh__wrapper {
+    margin: 48px;
+}
+
+.ad__card {
+    height: 450px;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 18px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ad__card img {
+    width: 300px;
+    padding-left: 24px;
+    margin-top: 15px;
+    height: 360px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.ad__detail-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-box h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.hh__reject__btn {
+    width: 270px;
+    height: 48px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #fff;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hh__reject__btn:hover {
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(ff, 0, 0, 0.2)));
+}

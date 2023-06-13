@@ -1,0 +1,12 @@
+.donation-history {
+    margin: 0 auto;
+}
+
+.dh_header {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+    margin-top: 5rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+}
