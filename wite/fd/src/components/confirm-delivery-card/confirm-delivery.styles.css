@@ -1,0 +1,75 @@
+.confirm-delivery-card {
+    height: 680px;
+    width: 300px;
+    margin: 40px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-delivery-card img {
+    width: 270px;
+    margin-top: 15px;
+    height: 360px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.detail-box {
+    width: 100%;
+    height: 205px;
+    width: 270px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.detail-box h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.reject__btn {
+    width: 270px;
+    height: 48px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #fff;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.reject__btn:hover {
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(ff, 0, 0, 0.2)));
+}
+
+.order__btn {
+    width: 270px;
+    height: 48px;
+    background-color: #000;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #fff;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.order__btn:hover {
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(0, 0, 0, 0.2)));
+}
+
+.seeker__address p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.seeker__name p {
+    font-size: 16px;
+}
