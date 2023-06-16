@@ -33,7 +33,7 @@ const DonateFoods = () => {
         };
         try {
             const response = await axios.post(
-                "http://localhost:8000/api/donations",
+                "/api/donations",
                 data,
                 config
             );

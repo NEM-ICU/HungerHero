@@ -24,7 +24,7 @@ const Register = () => {
         event.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:8000/api/users/register",
+                "/api/users/register",
                 {
                     username,
                     name,

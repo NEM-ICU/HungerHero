@@ -27,7 +27,7 @@ const HistoryRecord = ({
     const deleteFood = async () => {
         try {
             const res = await axios.delete(
-                "http://localhost:8000/api/donations/delete-donation?food_id=" +
+                "/api/donations/delete-donation?food_id=" +
                     food_id,
                 config
             );
@@ -46,7 +46,7 @@ const HistoryRecord = ({
         const fetchSeeker = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:8000/api/users/get-user?id=" +
+                    "/api/users/get-user?id=" +
                         requested_seeker_id,
                     config
                 );

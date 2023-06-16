@@ -19,7 +19,7 @@ const AdminPanel = () => {
         const fetchAllFoods = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:8000/api/donations/filter?stage=Pending",
+                    "/api/donations/filter?stage=Pending",
                     config
                 );
                 setDonations(res.data.foods);

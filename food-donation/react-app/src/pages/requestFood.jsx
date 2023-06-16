@@ -19,7 +19,7 @@ const Donations = () => {
         const fetchAllFoods = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:8000/api/donations/filter?stage=approved",
+                    "/api/donations/filter?stage=approved",
                     config
                 );
                 console.log(res.data);

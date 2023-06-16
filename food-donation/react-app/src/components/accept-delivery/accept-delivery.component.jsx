@@ -29,7 +29,7 @@ const AcceptDelivery = ({
     const deliverFood = async () => {
         try {
             const res = await axios.patch(
-                "http://localhost:8000/api/donations/",
+                "/api/donations/",
                 {
                     food_id,
                     stage: "deliver accepted",
@@ -42,7 +42,7 @@ const AcceptDelivery = ({
         }
         try {
             const res = await axios.patch(
-                "http://localhost:8000/api/donations/accept-delivery",
+                "/api/donations/accept-delivery",
                 {
                     food_id,
                 },
@@ -54,7 +54,7 @@ const AcceptDelivery = ({
         }
         try {
             const res = await axios.patch(
-                "http://localhost:8000/api/donations/update-rider-name",
+                "/api/donations/update-rider-name",
                 {
                     food_id,
                     name: window.localStorage.getItem("name"),
@@ -76,7 +76,7 @@ const AcceptDelivery = ({
         const fetchSeeker = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:8000/api/users/get-user?id=" +
+                    "/api/users/get-user?id=" +
                         requested_seeker_id,
                     config
                 );

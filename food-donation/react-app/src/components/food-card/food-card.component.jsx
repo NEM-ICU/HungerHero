@@ -15,7 +15,7 @@ const FoodCard = ({ name, quantity, src, food_id }) => {
     const acceptFood = async () => {
         try {
             const res = await axios.patch(
-                "http://localhost:8000/api/donations/",
+                "/api/donations/",
                 {
                     food_id,
                     stage: "accepted",
@@ -30,7 +30,7 @@ const FoodCard = ({ name, quantity, src, food_id }) => {
     const updateRecord = async () => {
         try {
             const res = await axios.patch(
-                "http://localhost:8000/api/donations/update-seeker-id",
+                "/api/donations/update-seeker-id",
                 {
                     food_id,
                 },

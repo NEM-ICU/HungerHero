@@ -15,7 +15,7 @@ const AdminCard = ({ name, quantity, food_id, src }) => {
     const deleteFood = async () => {
         try {
             const res = await axios.delete(
-                "http://localhost:8000/api/donations/delete-donation?food_id=" +
+                "/api/donations/delete-donation?food_id=" +
                     food_id,
                 config
             );
@@ -27,7 +27,7 @@ const AdminCard = ({ name, quantity, food_id, src }) => {
     const approveFood = async () => {
         try {
             const res = await axios.patch(
-                "http://localhost:8000/api/donations/",
+                "/api/donations/",
                 {
                     food_id,
                     stage: "approved",

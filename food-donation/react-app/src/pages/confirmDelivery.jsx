@@ -19,7 +19,7 @@ const ConfirmDelivery = () => {
         const fetchAllFoods = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:8000/api/donations/delivered-items",
+                    "/api/donations/delivered-items",
                     config
                 );
                 console.log(res);

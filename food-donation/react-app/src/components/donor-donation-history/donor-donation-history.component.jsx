@@ -25,7 +25,7 @@ const DonorDonationHistoryRecord = ({
         const fetchSeeker = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:8000/api/users/get-user?id=" +
+                    "/api/users/get-user?id=" +
                         requested_seeker_id,
                     config
                 );

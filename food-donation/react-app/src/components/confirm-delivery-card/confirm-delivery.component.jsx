@@ -26,7 +26,7 @@ const ConfirmDeliveryCard = ({
     const completeOrder = async () => {
         try {
             const res = await axios.patch(
-                "http://localhost:8000/api/donations/",
+                "/api/donations/",
                 {
                     food_id,
                     stage: "completed",
@@ -48,7 +48,7 @@ const ConfirmDeliveryCard = ({
         const fetchSeeker = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:8000/api/users/get-user?id=" +
+                    "/api/users/get-user?id=" +
                         requested_seeker_id,
                     config
                 );
