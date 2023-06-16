@@ -10,6 +10,8 @@ const Hero = () => {
         const role = window.localStorage.getItem("role");
         if (role === 'donor') {
             navigate('create-donation')
+        }else if(role == undefined){
+            navigate('register')
         } else {
             alert('You are not allowed to donate!')
         }

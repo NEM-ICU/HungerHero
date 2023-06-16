@@ -38,7 +38,7 @@ const Register = () => {
                     m_no: phoneNo,
                 }
             );
-            console.log(response);
+
 
             if (response.data) {
                 alert(response.data.message);
